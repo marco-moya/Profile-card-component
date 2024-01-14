@@ -1,0 +1,132 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --font-Kumbh-Sans: 'Kumbh Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: -100vw -65vh, 40vw 60vh;
+}
+
+p, span, h1 {
+  font-family: var(--font-Kumbh-Sans);
+}
+
+.card-container {
+  max-width: 350px;
+  width: 90%;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  margin: 20px;
+}
+
+.profile-container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+  position: relative;
+}
+
+.avatar-container {
+  width: 100%;
+  height: 50%;
+  background-image: url("./images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.name-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 6px solid white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.age-avatar {
+  color: var(--dark-grayish-blue);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 0.4rem;
+}
+
+.country-avatar {
+  color: var(--dark-grayish-blue);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.information-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.amount-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+.amount, .name-avatar {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.concept {
+  color: var(--dark-gray);
+  font-size: 0.62rem;
+  letter-spacing: 0.12rem;
+  margin-top: 0.3rem;
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-size: contain;
+    background-position: -5vw -40vh, 55vw 55vh;
+  }
+}
