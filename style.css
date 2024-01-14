@@ -28,9 +28,9 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
-  background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
-  background-position: -100vw -65vh, 40vw 60vh;
+  background-size: 550px;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
 }
 
 p, span, h1 {
@@ -122,11 +122,4 @@ p, span, h1 {
   font-size: 0.62rem;
   letter-spacing: 0.12rem;
   margin-top: 0.3rem;
-}
-
-@media (min-width: 1200px) {
-  body {
-    background-size: contain;
-    background-position: -5vw -40vh, 55vw 55vh;
-  }
 }
